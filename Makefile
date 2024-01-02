@@ -8,7 +8,7 @@ OBJS			= $(SRCS:.c=.o)
 HDRS			= philo.h
 CC				= cc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -pthread -g
+CFLAGS			= -Wall -Wextra -Werror -pthread -O3
 NAME			= philo
 
 all:			shifuuu $(NAME)
