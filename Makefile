@@ -1,7 +1,7 @@
 SRCS = main.c \
 	   parsing.c \
 	   philo.c \
-	   routine_tools.c \
+	   routine_act.c \
 	   tools.c
 
 OBJS			= $(SRCS:.c=.o)

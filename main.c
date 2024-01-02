@@ -28,6 +28,7 @@ int main(int argc, char **argv) {
     t_philo *info;
     pthread_t *thread_id;
 
+
     info = (t_philo *)malloc(sizeof(t_philo));
     if (!info)
         return (error_manager(1));
