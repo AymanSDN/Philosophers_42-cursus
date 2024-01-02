@@ -6,12 +6,12 @@
 /*   By: asaadane <asaadane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 23:04:00 by asaadane          #+#    #+#             */
-/*   Updated: 2024/01/02 23:04:01 by asaadane         ###   ########.fr       */
+/*   Updated: 2024/01/02 23:24:34 by asaadane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILO_H
-#define PHILO_H
+# define PHILO_H
 
 # include <pthread.h>
 # include <stdio.h>
@@ -28,8 +28,6 @@
 
 # define TRUE 1
 # define FALSE 0
-
-
 
 typedef enum e_moves
 {
@@ -69,7 +67,6 @@ typedef struct s_philo
 	pthread_mutex_t	sync;
 }	t_philo;
 
-
 int			parsing(char **args, int args_num, t_philo *target);
 int			ft_atoi(const char *str);
 long long	ft_time(void);
@@ -79,6 +76,5 @@ void		manage_philos(struct s_info *philo, t_moves action);
 void		eat(struct s_info *philo);
 void		philo_sleep(struct s_info *philo);
 void		philo_think(struct s_info *philo);
-
 
 #endif
